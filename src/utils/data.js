@@ -1,0 +1,42 @@
+export const data = [
+  {
+    id: 1,
+    name: 'Russ Shirt',
+    price: '19.99',
+    image: require('../images/white-shirt.jpg'),
+    category: 'man',
+    trending: true,
+  },
+  {
+    id: 2,
+    name: 'Another Shirt',
+    price: '3.99',
+    image: require('../images/shirt.jpg'),
+    category: 'man',
+    trending: false,
+  },
+  {
+    id: 3,
+    name: 'Super Shirt',
+    price: '6.99',
+    image: require('../images/blue-shirt.png'),
+    category: 'woman',
+    trending: false,
+  },
+  {
+    id: 4,
+    name: 'Fantastic Shirt',
+    price: '9.99',
+    image: require('../images/black-t-shirt.png'),
+    category: 'man',
+    trending: true,
+  },
+  {
+    id: 5,
+    name: 'Super-puper shirt',
+    price: '12.89',
+    image: require('../images/red-shirt.png'),
+    category: 'man',
+    trending: true,
+  },
+];
