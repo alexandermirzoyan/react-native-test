@@ -12,6 +12,7 @@ import manIcon from '../../images/man-icon.png';
 import womanIcon from '../../images/woman-icon.png';
 import TrendingItem from '../../components/TrendingItem/TrendingItem';
 import { data } from "../../utils/data";
+import {sliceArray} from "../../utils/sliceArray";
 
 const styles = StyleSheet.create({
   imageStyle: {
@@ -86,7 +87,7 @@ const Home = ({ navigation }) => {
         style={styles.wrapper}
       >
         {
-          data.filter(filteringItem => filteringItem.trending).map((item, index) => (
+          sliceArray(data.filter(filteringItem => filteringItem.trending), 3).map((item, index) => (
             <TrendingItem
               id={item.id}
               source={item.image}

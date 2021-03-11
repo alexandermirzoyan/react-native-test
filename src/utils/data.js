@@ -13,7 +13,7 @@ export const data = [
     price: '3.99',
     image: require('../images/shirt.jpg'),
     category: 'man',
-    trending: false,
+    trending: true,
   },
   {
     id: 3,
