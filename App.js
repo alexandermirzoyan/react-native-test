@@ -23,7 +23,13 @@ const App = () => {
         />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Trending" component={Trending} />
-        <Stack.Screen name="Categories" component={Categories} />
+        <Stack.Screen
+          name="Categories"
+          component={Categories}
+          options={({ route }) => ({
+            title: `Categories / ${route.params.type}`
+          })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
